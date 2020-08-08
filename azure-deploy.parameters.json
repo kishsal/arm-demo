@@ -3,13 +3,18 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "sqlServerName": {
-            "value": "## TO BE DEFINED ##"
+            "value": "cssql98234243298"
         },
         "adminUserName": {
-            "value": "## TO BE DEFINED ##"
+            "value": "sqladmin"
         },
         "adminPassword": {
-            "value": "## TO BE DEFINED ##"
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/31c07c5d-fab3-4c8c-8a4e-0accddc5d6aa/resourceGroups/vaults/providers/Microsoft.KeyVault/vaults/ks-kv"
+                },
+                "secretName": "sqlAdminPassword"
+            }
         }
     }
 }
